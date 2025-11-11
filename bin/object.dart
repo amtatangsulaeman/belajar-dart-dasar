@@ -1,0 +1,24 @@
+class Bicycle {
+  String? color;
+  int? size;
+  int? currentSpeed;
+
+  void changeGear(int newValue) {
+    currentSpeed = newValue;
+  }
+
+  void display() {
+    print("Color : $color");
+    print("Size : $size");
+    print("Current Speed : $currentSpeed");
+  }
+}
+
+void main(List<String> args) {
+  Bicycle bicycle = Bicycle();
+  bicycle.color = "red";
+  bicycle.size = 26;
+  bicycle.currentSpeed = 0;
+  bicycle.changeGear(5);
+  bicycle.display();
+}
